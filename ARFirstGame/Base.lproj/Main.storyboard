@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="ViewController" customModule="ARFirstGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fvg-ae-iyn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X6c-uv-N2l">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Cg-Ui-CuM">
+                                <rect key="frame" x="0.0" y="567" width="375" height="100"/>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
+                                <state key="normal" title="Set Starting Point">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="setPointButton:" destination="BV1-FR-VrT" eventType="touchUpInside" id="UJt-C2-pdL"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0m" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qwJ-kp-ia0">
+                                <rect key="frame" x="-0.5" y="517" width="375" height="67"/>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6fd-pv-wI5">
+                                <rect key="frame" x="180" y="326.5" width="15" height="13"/>
+                                <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2Cg-Ui-CuM" firstAttribute="width" secondItem="fvg-ae-iyn" secondAttribute="width" id="Ga6-aS-cvP"/>
+                            <constraint firstItem="6fd-pv-wI5" firstAttribute="centerY" secondItem="fvg-ae-iyn" secondAttribute="centerY" id="HUx-nV-E8x"/>
+                            <constraint firstItem="X6c-uv-N2l" firstAttribute="centerX" secondItem="fvg-ae-iyn" secondAttribute="centerX" id="T9b-iO-7zN"/>
+                            <constraint firstItem="6fd-pv-wI5" firstAttribute="centerX" secondItem="fvg-ae-iyn" secondAttribute="centerX" id="a9R-3K-ABp"/>
+                            <constraint firstItem="qwJ-kp-ia0" firstAttribute="height" secondItem="fvg-ae-iyn" secondAttribute="height" multiplier="0.1" id="bQ9-RI-bCf"/>
+                            <constraint firstItem="6fd-pv-wI5" firstAttribute="height" secondItem="fvg-ae-iyn" secondAttribute="height" multiplier="0.02" id="e7N-jI-JYl"/>
+                            <constraint firstItem="2Cg-Ui-CuM" firstAttribute="centerY" secondItem="fvg-ae-iyn" secondAttribute="centerY" multiplier="1.85" id="eQL-zd-TEu"/>
+                            <constraint firstItem="2Cg-Ui-CuM" firstAttribute="centerX" secondItem="fvg-ae-iyn" secondAttribute="centerX" id="eXP-DP-0wn"/>
+                            <constraint firstItem="X6c-uv-N2l" firstAttribute="centerY" secondItem="fvg-ae-iyn" secondAttribute="centerY" id="ec3-aM-2sz"/>
+                            <constraint firstItem="qwJ-kp-ia0" firstAttribute="centerX" secondItem="fvg-ae-iyn" secondAttribute="centerX" id="fTa-Sa-lwg"/>
+                            <constraint firstItem="qwJ-kp-ia0" firstAttribute="width" secondItem="fvg-ae-iyn" secondAttribute="width" id="jRp-lI-XDR"/>
+                            <constraint firstItem="2Cg-Ui-CuM" firstAttribute="height" secondItem="fvg-ae-iyn" secondAttribute="height" multiplier="0.15" id="q6F-cS-VpK"/>
+                            <constraint firstItem="6fd-pv-wI5" firstAttribute="width" secondItem="fvg-ae-iyn" secondAttribute="width" multiplier="0.04" id="uZC-JK-WbT"/>
+                            <constraint firstItem="qwJ-kp-ia0" firstAttribute="centerY" secondItem="fvg-ae-iyn" secondAttribute="centerY" multiplier="1.65" id="wIh-aN-GmS"/>
+                            <constraint firstItem="X6c-uv-N2l" firstAttribute="width" secondItem="fvg-ae-iyn" secondAttribute="width" id="y8D-45-a3C"/>
+                            <constraint firstItem="X6c-uv-N2l" firstAttribute="height" secondItem="fvg-ae-iyn" secondAttribute="height" id="zMB-7I-tOC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oSF-vM-3fz"/>
+                    </view>
+                    <connections>
+                        <outlet property="measurementLabel" destination="qwJ-kp-ia0" id="0nA-Kd-tCc"/>
+                        <outlet property="sceneView" destination="X6c-uv-N2l" id="ZcA-Mu-ZAD"/>
+                        <outlet property="setButton" destination="2Cg-Ui-CuM" id="oy9-GY-Odj"/>
+                        <outlet property="targetView" destination="6fd-pv-wI5" id="auY-Iw-xIH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
+        </scene>
+    </scenes>
+</document>
